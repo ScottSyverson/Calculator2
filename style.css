@@ -1,9 +1,3 @@
-*,
-* ::before,
-*::after {
-    box-sizing: border-box;
-    font-weight: normal;
-}
 
 .bg {
     padding: 0;
@@ -20,16 +14,15 @@
     grid-template-columns: repeat(4, 100px);
     /*4 columns, 100px wide*/
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-    /*minmax - auto lets the display grow as needed*/    
+    /*minmax - auto lets the display grow as needed*/
 }
 
 .calculator-grid button {
     cursor: pointer;
     font-size: 2rem;
-    border: 3px solid white;
+    border: 3px solid darkmagenta;
     outline: none;
     background-color: lightskyblue;
-
 }
 
 .calculator-grid button:hover {
@@ -38,10 +31,10 @@
 
 button:active {
     transform: scale(0.90);
-    border: inset 2px black;
+    border: inset 5px darkmagenta;
     color: antiquewhite;
     text-shadow: 3px 0px 6px rgba(255, 255, 255, 1),
-             -3px 0px 6px rgba(255, 255, 255, 1);
+        -3px 0px 6px rgba(255, 255, 255, 1);
 }
 
 .span-two {
