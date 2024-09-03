@@ -11,9 +11,9 @@
     align-content: center;
     min-height: 100vh;
     /* 100vh means it takes up 100% of the height*/
-    grid-template-columns: repeat(4, 100px);
-    /*4 columns, 100px wide*/
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-columns: repeat(4, 75px);
+    /*4 columns, 75px wide*/
+    grid-template-rows: minmax(120px, auto) repeat(5, 75px);
     /*minmax - auto lets the display grow as needed*/
 }
 
@@ -21,8 +21,8 @@
     cursor: pointer;
     font-size: 2rem;
     border: 3px solid darkmagenta;
-    outline: none;
     background-color: lightskyblue;
+    color: darkslategray;
 }
 
 .calculator-grid button:hover {
@@ -62,5 +62,5 @@ button:active {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
-
 }
+

@@ -17,11 +17,13 @@ class Calculator {
 
     appendNumber(number) {
         if (number === '.' && this.currentOperand.includes('.')) return
+        /* keeps user from entering multiple decimals*/
         this.currentOperand = this.currentOperand.toString() + number.toString()
     }
 
     chooseOperation(operation) {
         if (this.currentOperand === '') return
+        /*need to enter a number first*/
         if (this.previousOperand !== '') {
             this.compute()
         }
